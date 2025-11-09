@@ -31,17 +31,17 @@ export default function About() {
 
   const images = [
     {
-      src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=800&fit=crop",
+      src: "../../public/about-img1.jpg",
       title: "Community Events",
       id: "CE01",
     },
     {
-      src: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=600&h=800&fit=crop",
+      src: "../../public/about-img2.jpg",
       title: "Tech Workshops",
       id: "TW02",
     },
     {
-      src: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&h=800&fit=crop",
+      src: "../../public/about-img3.jpg",
       title: "Hackathons",
       id: "HK03",
     },
