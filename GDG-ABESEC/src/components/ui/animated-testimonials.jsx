@@ -131,15 +131,13 @@ export const AnimatedTestimonials = ({
               ))}
             </motion.p>
           </motion.div>
-{/* 🌸 Refined Social Media Icons - balanced spacing & subtle glow */}
-<div className="flex justify-center gap-2 mt-6 mb-8 text-3xl">
-  {testimonials[active].socials?.linkedin && (
-    <a
-      href={testimonials[active].socials.linkedin}
+
+        <div className="flex justify-center gap-2 mt-6 mb-8 text-3xl">
+        {testimonials[active].socials?.linkedin && (
+       <a href={testimonials[active].socials.linkedin}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-gray-400 hover:text-blue-600 transition-all duration-300 ease-in-out transform hover:scale-115 rounded-full p-2 hover:bg-blue-100/30 hover:shadow-[0_0_6px_#3b82f680]"
-    >
+      className="text-gray-400 hover:text-blue-600 transition-all duration-300 ease-in-out transform hover:scale-115 rounded-full p-2 hover:bg-blue-100/30 hover:shadow-[0_0_6px_#3b82f680]">
       <FaLinkedin />
     </a>
   )}
@@ -163,8 +161,7 @@ export const AnimatedTestimonials = ({
       <FaGithub />
     </a>
   )}
-</div>
-
+   </div>
 
           <div className="flex gap-4 pt-12 md:pt-0">
             <button
