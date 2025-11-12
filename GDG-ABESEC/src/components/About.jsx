@@ -1,13 +1,8 @@
-"use client";
-
 import React, { useEffect, useRef, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Users, UsersRound, Trophy } from "lucide-react";
+import StatsSection from "./StatsSection";
 
-/* --------------------------------------
-   3D Card Components
--------------------------------------- */
 const CardContainer = ({ children, className = "" }) => {
   const containerRef = useRef(null);
   const [rotateX, setRotateX] = useState(0);
@@ -62,9 +57,6 @@ const CardItem = ({ children, translateZ = 0 }) => {
   );
 };
 
-
-
-
 export default function About() {
   useEffect(() => {
     AOS.init({
@@ -77,7 +69,6 @@ export default function About() {
 
   return (
     <>
-    
       <section className="min-h-screen bg-black flex items-center justify-center">
         <div className="text-center">
           <h2 className="text-5xl font-bold text-slate-100 mb-4">Welcome Section</h2>
@@ -85,16 +76,20 @@ export default function About() {
         </div>
       </section>
 
-    
       <section className="min-h-screen bg-black py-20 px-6 md:px-12 lg:px-20 relative overflow-hidden">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-6xl md:text-7xl font-bold text-slate-300 mb-4">About Us</h2>
-            <div className="h-[3px] w-64 rounded-full mx-auto bg-gradient-to-r from-transparent via-blue-500 to-transparent"></div>
+            <h2 className="text-6xl md:text-7xl font-bold text-slate-300 mb-4" >
+              About Us
+            </h2>
+            <div
+              className="h-[3px] w-64 rounded-full mx-auto bg-gradient-to-r from-transparent via-blue-500 to-transparent"
+              
+            ></div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-20">
-            <div className="order-2 lg:order-1" data-aos="fade-up" data-aos-delay="200">
+            <div className="order-2 lg:order-1" data-aos="fade-up" >
               <p className="text-slate-300 text-left text-lg font-mono leading-relaxed">
                 Google Developer Groups (GDG) on Campus ABESEC is a vibrant student community
                 driven by curiosity, collaboration, and innovation. We bring together passionate
@@ -105,10 +100,10 @@ export default function About() {
               </p>
             </div>
 
-            <div className="order-1 lg:order-2" data-aos="fade-up" data-aos-delay="400">
+            <div className="order-1 lg:order-2" data-aos="fade-up" >
               <CardContainer>
                 <CardBody className="relative rounded-2xl overflow-hidden border border-slate-700/50 bg-slate-900/40 backdrop-blur-sm hover:border-slate-400/50 transition-all duration-300">
-                  <CardItem translateZ="100">
+                  <CardItem translateZ={100}>
                     <img
                       src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop"
                       alt="GDG Community"
@@ -122,14 +117,7 @@ export default function About() {
         </div>
       </section>
 
-
-      {/* Next Section */}
-      {/* <section className="min-h-screen bg-black flex items-center justify-center">
-        <div className="text-center">
-          <h2 className="text-5xl font-bold text-slate-100 mb-4">Next Section</h2>
-          <p className="text-xl text-slate-400">Continue exploring...</p>
-        </div>
-      </section> */}
+      <StatsSection />
     </>
   );
 }
