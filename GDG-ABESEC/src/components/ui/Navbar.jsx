@@ -10,6 +10,7 @@ import {
   IconCalendarEvent,
   IconHelpCircle,
   IconInfoCircle,
+  IconUsers,
 } from "@tabler/icons-react";
 import {
   AnimatePresence,
@@ -18,6 +19,7 @@ import {
   useSpring,
   useTransform,
 } from "motion/react";
+import { FaTeamspeak } from "react-icons/fa";
 
 // -------------------- Floating Dock Navbar --------------------
 
@@ -186,7 +188,12 @@ export default function Navbar() {
     {
       title: "Events",
       icon: <IconCalendarEvent className="w-full h-full text-pink-500" />,
-      href: "#events",
+      href: "/events",
+    },
+    {
+      title: "Team",
+      icon: <IconUsers className="w-full h-full text-orange-500" />,
+      href: "/team",
     },
     {
       title: "Help",

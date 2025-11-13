@@ -71,7 +71,7 @@ export default function About() {
     <>
       
 
-      <section className="min-h-screen bg-black py-20 px-6 md:px-12 lg:px-20 relative overflow-hidden">
+      <section id="about" className="min-h-screen bg-black py-20 px-6 md:px-12 lg:px-20 relative overflow-hidden">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-6xl md:text-7xl font-bold text-slate-300 mb-4" >
