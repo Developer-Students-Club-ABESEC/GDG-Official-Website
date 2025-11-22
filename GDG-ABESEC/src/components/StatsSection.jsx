@@ -310,7 +310,7 @@ export default function StatsSection() {
               headline={stat.headline}
               number={stat.number}
               suffix={stat.suffix}
-              delay={1.8 + index * 0.4}
+              delay={0.8 + index * 0.3}
               isVisible={isVisible}
             />
           ))}
