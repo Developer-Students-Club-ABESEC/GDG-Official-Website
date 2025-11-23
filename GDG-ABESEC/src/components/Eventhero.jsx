@@ -35,12 +35,12 @@ export default function EventHero() {
   return (
     <section className="hero-section">
       <div className="overlay">
-        <h1 className="title">
+        {/* <h1 className="title">
           <span>MTG</span> 2.0
-        </h1>
+        </h1> */}
 
-        <p className="subtitle">Design. Build. Comply -- Hands-on with Web3 & Figma</p>
-        <p className="date">November 29, 2025 | ABESEC</p>
+        {/* <p className="subtitle">Design. Build. Comply -- Hands-on with Web3 & Figma</p>
+        <p className="date">November 29, 2025 | ABESEC</p> */}
 
         <div className="timer">
           <div className="box">
