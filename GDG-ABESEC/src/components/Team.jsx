@@ -542,6 +542,7 @@ const Team = () => {
           align-items: center;
           gap: 16px;
           z-index: 2;
+          
         }
 
         .tm-scroll-text {
@@ -552,26 +553,27 @@ const Team = () => {
           font-weight: 500;
         }
 
-        .tm-scroll-arrow {
-          width: 24px;
-          height: 24px;
-          border-bottom: 2px solid #666666;
-          border-right: 2px solid #666666;
-          transform: rotate(45deg);
-          animation: tm-bounce 2s infinite ease-in-out;
-        }
+      .tm-scroll-arrow {
+  width: 24px;
+  height: 24px;
+  border-bottom: 2px solid #666666;
+  border-right: 2px solid #666666;
+  transform: rotate(45deg);
+  animation: tm-bounce 2s infinite ease-in-out;
+}
 
-        @keyframes tm-bounce {
-          0%, 20%, 50%, 80%, 100% {
-            transform: rotate(45deg) translateY(0);
-          }
-          40% {
-            transform: rotate(45deg) translateY(12px);
-          }
-          60% {
-            transform: rotate(45deg) translateY(6px);
-          }
-        }
+@keyframes tm-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: rotate(45deg) translateY(0);
+  }
+  40% {
+    transform: rotate(45deg) translateY(10px);
+  }
+  60% {
+    transform: rotate(45deg) translateY(5px);
+  }
+}
+
 
         .tm-section {
           width: 100%;
