@@ -11,7 +11,6 @@ export default function HomePage() {
       <div className="w-full  overflow-x-hidden">
         <EventHero />
         <EventsCard />
-        <EventsCard />
         <div className="h-screen">
           <DomeGallery />
         </div>
