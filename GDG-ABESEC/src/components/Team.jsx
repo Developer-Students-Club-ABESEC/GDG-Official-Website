@@ -7,61 +7,61 @@ const teamMembers = {
     { 
       name: "Arya Schwetank", 
       role: "Organiser", 
-      description: "Visionary leader orchestrating the entire event with 15+ years of experience.",
+      description: "The guiding force who keeps the vision bright and the whole team moving together with calm, steady leadership.",
       img: "/TeamPageImages/Arya Schwetank.jpg",
-       linkedin: "https://www.linkedin.com/in/aryaschwetank/",
-        github: "https://github.com/aryaschwetank",
+      linkedin: "https://www.linkedin.com/in/aryaschwetank/",
+      github: "https://github.com/aryaschwetank",
     }
   ],
+
   actingGenerals: [
     { 
       name: "Prakhar Tiwari", 
       role: "Acting General", 
-      description: "Strategic leader managing operations and team coordination.",
+      description: "A natural leader who turns ideas into direction and direction into results with effortless clarity.",
       img: "/TeamPageImages/Prakhar Tiwari.jpg",
-       linkedin: "https://www.linkedin.com/in/prakhar-tiwari1908/",
-        github: "https://github.com/prakhar-174",
+      linkedin: "https://www.linkedin.com/in/prakhar-tiwari1908/",
+      github: "https://github.com/prakhar-174",
     },
     { 
       name: "Ayush Jain", 
       role: "Acting General", 
-      description: "Expert in logistics and event execution management.",
+      description: "A calm strategist who brings order, balance and smooth coordination wherever he steps in.",
       img: "/TeamPageImages/Ayush Jain AG.jpg",
-     linkedin: "https://www.linkedin.com/in/urayushjain/",
-        github: "https://github.com/URAYUSHJAIN",
+      linkedin: "https://www.linkedin.com/in/urayushjain/",
+      github: "https://github.com/URAYUSHJAIN",
     },
     { 
       name: "Riya Jaiswal", 
       role: "Acting General", 
-      description: "Technical lead ensuring smooth event infrastructure.",
+      description: "A steady leader who ensures every system, every team and every moment flows in perfect sync.",
       img: "/TeamPageImages/Riya Jaiswal.jpg",
-       linkedin: "https://www.linkedin.com/in/riyajstar07/",
-        github: "https://github.com/riyajstar07"
+      linkedin: "https://www.linkedin.com/in/riyajstar07/",
+      github: "https://github.com/riyajstar07"
     },
     { 
       name: "Kshitiz Srivastav", 
       role: "Acting General", 
-      description: "Marketing and communications specialist for the event.",
+      description: "The confident voice that inspires the team, leading with clarity, charm and creative energy.",
       img: "/TeamPageImages/Kshitiz Srivastav.jpg",
-     linkedin:
-          "https://www.linkedin.com/in/kshitiz-srivastav-a87028333/",
-        github: "",
+      linkedin: "https://www.linkedin.com/in/kshitiz-srivastav-a87028333/",
+      github: "",
     },
     { 
       name: "Deepanshu Kaushik", 
       role: "Acting General", 
-      description: "Operations manager handling event workflows.",
+      description: "A dependable organiser who brings structure, discipline and steady momentum to every plan.",
       img: "/TeamPageImages/Deepanshu Kaushik.jpg",
-        linkedin:
-          "https://www.linkedin.com/in/deepanshu-kaushik-174059297/",
-        github: "https://github.com/Deepanshu-ui-dev",
+      linkedin: "https://www.linkedin.com/in/deepanshu-kaushik-174059297/",
+      github: "https://github.com/Deepanshu-ui-dev",
     }
   ],
+
   leads: [
     { 
       name: "Alok Ranjan Singh", 
       role: "Design Lead", 
-      description: "Leading the design and creative direction team.",
+      description: "A design soul who turns blank screens into beautiful stories with color, clarity and creativity.",
       img: "/TeamPageImages/Alok Ranjan Singh.jpg",
       linkedin: "https://www.linkedin.com/in/alok-ranjan-singh-979036296/",
       github: "https://github.com/"
@@ -69,7 +69,7 @@ const teamMembers = {
     { 
       name: "Ayush Goyal", 
       role: "Design Lead", 
-      description: "Backend operations and database management lead.",
+      description: "The creative spark who makes every design feel warm, alive and crafted with a personal touch.",
       img: "/TeamPageImages/Ayush Goyal.jpg",
       linkedin: "https://www.linkedin.com/in/ayush-goyal-225795274/",
       github: "https://github.com/"
@@ -77,7 +77,7 @@ const teamMembers = {
     { 
       name: "Keshav Khippal", 
       role: "Technical Lead", 
-      description: "Human resources and team coordination specialist.",
+      description: "The tech brain who calmly pieces together logic, creativity and innovation like a perfect puzzle.",
       img: "/TeamPageImages/Keshav Khippal.jpg",
       linkedin: "https://www.linkedin.com/in/keshav-khippal/",
       github: "https://github.com/"
@@ -85,7 +85,7 @@ const teamMembers = {
     { 
       name: "Anshika Srivastav", 
       role: "Promotions Lead", 
-      description: "Sales and partnership development lead.",
+      description: "The cheerful storyteller who makes every idea shine brighter and reach the right hearts.",
       img: "/TeamPageImages/Anshika Srivastav.jpg",
       linkedin: "https://www.linkedin.com/in/webd-anshika-srivastav/",
       github: "https://github.com/"
@@ -93,7 +93,7 @@ const teamMembers = {
     { 
       name: "Harshit Agarwal", 
       role: "Promotions Lead", 
-      description: "Frontend development and UI implementation lead.",
+      description: "A creative communicator who blends charm and strategy to make every message unforgettable.",
       img: "/TeamPageImages/Harshit Agarwal.jpg",
       linkedin: "https://www.linkedin.com/in/harshit-agrawal-5aab84197/",
       github: "https://github.com/"
@@ -101,7 +101,7 @@ const teamMembers = {
     { 
       name: "Amanya Maurya", 
       role: "Events Lead", 
-      description: "DevOps and infrastructure deployment lead.",
+      description: "The organiser with a spark—creating events that feel smooth, fun and full of lively energy.",
       img: "/TeamPageImages/Amanya Maurya.jpg",
       linkedin: "https://www.linkedin.com/in/amanya-maurya-1378aa296/",
       github: "https://github.com/"
@@ -109,7 +109,7 @@ const teamMembers = {
     { 
       name: "Ayush Jain", 
       role: "Elixer Lead", 
-      description: "Content creation and storytelling lead.",
+      description: "A creative mind who adds magic, rhythm and fresh vibes to every moment of Elixer.",
       img: "/TeamPageImages/Ayush Jain EH.jpg",
       linkedin: "https://www.linkedin.com/in/urayushjain",
       github: "https://github.com/"
@@ -117,7 +117,7 @@ const teamMembers = {
     { 
       name: "Arpan Pal", 
       role: "Elixer Lead", 
-      description: "Data analytics and insights lead.",
+      description: "A calm creator who blends ideas and meaning to give Elixer its heart and personality.",
       img: "/TeamPageImages/Arpan Pal.jpg",
       linkedin: "https://www.linkedin.com/in/arpan-pal-9357a3310/",
       github: "https://github.com/"
@@ -125,7 +125,7 @@ const teamMembers = {
     { 
       name: "Aditya Kumar Vaish", 
       role: "Overall Coordinator", 
-      description: "Quality assurance and testing lead.",
+      description: "The steady anchor who keeps everything balanced, organised and confidently on track.",
       img: "/TeamPageImages/Aditya Kr. OC.jpg",
       linkedin: "https://www.linkedin.com/in/aditya-vaish-482a11281/",
       github: "https://github.com/"
@@ -133,7 +133,7 @@ const teamMembers = {
     { 
       name: "Ayushi Singh", 
       role: "Production Lead", 
-      description: "Security and compliance lead.",
+      description: "A detail-loving creator who turns tiny elements into polished, perfect moments.",
       img: "/TeamPageImages/Ayushi Singh.jpg",
       linkedin: "https://www.linkedin.com/in/ayushisingh29/",
       github: "https://github.com/"
@@ -141,7 +141,7 @@ const teamMembers = {
     { 
       name: "Aadarsh Dhiman", 
       role: "Production Lead", 
-      description: "Community engagement and outreach lead.",
+      description: "The cheerful perfectionist who ensures everything looks, feels and flows exactly right.",
       img: "/TeamPageImages/Aadarsh Dhiman.jpg",
       linkedin: "https://www.linkedin.com/in/aadarsh-dhiman-5170a634a/",
       github: "https://github.com/"
@@ -149,7 +149,7 @@ const teamMembers = {
     { 
       name: "Sakshi Vishnoi", 
       role: "Social Media Lead", 
-      description: "Product strategy and development lead.",
+      description: "The creative thinker who makes every post feel expressive, aesthetic and full of personality.",
       img: "/TeamPageImages/Sakshi Vishnoi.jpg",
       linkedin: "https://www.linkedin.com/in/sakshi-vishnoi-7770b2315/",
       github: "https://github.com/"
@@ -157,13 +157,14 @@ const teamMembers = {
     { 
       name: "Aditya Kumar Vaish", 
       role: "Social Media Lead", 
-      description: "Brand strategy and creative communications lead.",
+      description: "The playful creative who gives social media its spark with clever ideas and bold expression.",
       img: "/TeamPageImages/Aditya Kr. SM.jpg",
       linkedin: "https://www.linkedin.com/in/aditya-vaish-482a11281/",
       github: "https://github.com/"
     }
   ]
 };
+
 
 const TeamMemberCard = ({ member, index }) => {
   const cardRef = useRef(null);
@@ -601,13 +602,13 @@ const Team = () => {
         .tm-organiser-container {
           max-width: 1800px;
           margin: 0 auto;
-          padding: 0 60px;
+          padding: 0 0px;
           display: flex;
           align-items: center;
         }
 
         .tm-organiser-card-wrapper {
-          flex: 0 0 700px;
+          flex: 0 0 640px;
         }
 
         .tm-generals-section,
@@ -641,7 +642,7 @@ const Team = () => {
 
         @media (max-width: 1400px) {
           .tm-organiser-container {
-            gap: 60px;
+            gap: 30px;
           }
 
           .tm-organiser-card-wrapper {
