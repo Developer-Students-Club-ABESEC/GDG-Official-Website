@@ -1,20 +1,34 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function ScrollProgressBar() {
   const [width, setWidth] = useState(0);
+  const targetWidth = useRef(0); // desired width based on scroll
 
   const handleScroll = () => {
     const scrollTop = window.scrollY;
     const docHeight =
       document.documentElement.scrollHeight - window.innerHeight;
-
     const scrollPercent = (scrollTop / docHeight) * 100;
-    setWidth(scrollPercent);
+    targetWidth.current = scrollPercent;
   };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    let animationFrameId;
+
+    const smoothUpdate = () => {
+      // Linear interpolation: current width moves 10% toward target each frame
+      setWidth((prev) => prev + (targetWidth.current - prev) * 0.1);
+      animationFrameId = requestAnimationFrame(smoothUpdate);
+    };
+
+    smoothUpdate();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      cancelAnimationFrame(animationFrameId);
+    };
   }, []);
 
   return (

@@ -32,7 +32,7 @@ export default function CursorTrail() {
       const dy = dotY.current - delayedY.current;
       const distance = Math.sqrt(dx * dx + dy * dy);
 
-      const maxDistance = 10; 
+      const maxDistance = 30; 
 
       if (distance > maxDistance) {
         const ratio = maxDistance / distance;
