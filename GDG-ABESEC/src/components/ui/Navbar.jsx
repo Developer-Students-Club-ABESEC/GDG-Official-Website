@@ -214,7 +214,7 @@ export default function Navbar() {
     {
       title: "About",
       icon: <IconInfoCircle className="w-full h-full text-green-400" />,
-      href: "#about",
+      href: "/#about",
     },
     {
       title: "Events",
@@ -229,7 +229,7 @@ export default function Navbar() {
     {
       title: "Help",
       icon: <IconHelpCircle className="w-full h-full text-yellow-400" />,
-      href: "#help",
+      href: "/contact",
     },
   ];
 
