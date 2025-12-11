@@ -83,20 +83,21 @@ function OrganisersAndActingGenerals() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="bg-[#0a0a0a] text-white flex flex-col items-center justify-center py-12 px-4">
-      <div className="text-center mt-16 mb-10">
-        <h2 className="text-6xl md:text-7xl font-bold text-[#e5e5e5] mb-4" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
+    <div className="bg-[#0a0a0a] text-white flex flex-col items-center justify-center 
+    py-12 sm:py-16 lg:py-20 px-4 md:px-6 lg:px-8 overflow-hidden">
+      <div className="text-center mt-10 mb-12 w-full px-2">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#e5e5e5] mb-4" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
           Meet the Leadership{" "}
           <span className="text-[#4285F4]">
             Board
           </span>
         </h2>
 
-        <div className="h-[2px] w-[400px] rounded-full mx-auto bg-[#4285F4]"></div>
+        <div className="h-[2px] w-40 sm:w-60 md:w-80 lg:w-[400px] mx-auto bg-[#4285F4] rounded-full"></div>
       </div>
 
-      <div className="w-full max-w-7xl px-4">
-        <div className="animated-testimonials-container">
+      <div className="w-full max-w-7xl px-2 sm:px-4">
+        <div className="animated-testimonials-container w-full">
           <AnimatedTestimonials
             testimonials={testimonials}
             autoplay={true}

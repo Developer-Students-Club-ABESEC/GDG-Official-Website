@@ -81,56 +81,56 @@ export default function About() {
             </div>
 
       
-            <div className="relative h-[600px]" data-aos="fade-left">
+            <div className="grid grid-cols-2 gap-4 md:gap-6 lg:gap-8" data-aos="fade-left">
 
            
               <div
-                className="absolute top-0 left-0 w-[48%] h-[38%] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-700 ease-out hover:scale-[1.05] cursor-pointer"
+                className="rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-700 ease-out hover:scale-[1.05] cursor-pointer"
                 data-aos="zoom-in"
                 data-aos-delay="100"
               >
                 <img
                   src="/image5ForDomeGal.jpg"
                   alt="Team collaboration"
-                  className="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-110"
+                  className="w-full h-48 sm:h-56 md:h-64 lg:h-72 object-cover object-center bg-black transition-transform duration-700 ease-out hover:scale-110"
                 />
               </div>
 
           
               <div
-                className="absolute top-0 right-0 w-[48%] h-[45%] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-700 ease-out hover:scale-[1.05] cursor-pointer"
+                className="rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-700 ease-out hover:scale-[1.05] cursor-pointer"
                 data-aos="zoom-in"
                 data-aos-delay="200"
               >
                 <img
                   src="/hackheaven5.jpeg"
                   alt="Workshop session"
-                  className="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-110"
+                  className="w-full h-48 sm:h-56 md:h-64 lg:h-72 object-cover object-center bg-black transition-transform duration-700 ease-out hover:scale-110"
                 />
               </div>
 
         
               <div
-                className="absolute bottom-0 left-0 w-[48%] h-[45%] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-700 ease-out hover:scale-[1.05] cursor-pointer"
+                className="rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-700 ease-out hover:scale-[1.05] cursor-pointer"
                 data-aos="zoom-in"
                 data-aos-delay="300"
               >
                 <img
                   src="techwinter4.jpeg"
                   alt="Innovation hub"
-                  className="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-110"
+                  className="w-full h-48 sm:h-56 md:h-64 lg:h-72 object-cover object-center bg-black transition-transform duration-700 ease-out hover:scale-110"
                 />
               </div>
 
               <div
-                className="absolute bottom-0 right-0 w-[48%] h-[38%] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-700 ease-out hover:scale-[1.05] cursor-pointer"
+                className="rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-700 ease-out hover:scale-[1.05] cursor-pointer"
                 data-aos="zoom-in"
                 data-aos-delay="400"
               >
                 <img
                   src="mtg2.0.jpg"
                   alt="Developer community"
-                  className="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-110"
+                  className="w-full  h-48 sm:h-56 md:h-64 lg:h-72 object-cover object-center bg-black transition-transform duration-700 ease-out hover:scale-110"
                 />
               </div>
 

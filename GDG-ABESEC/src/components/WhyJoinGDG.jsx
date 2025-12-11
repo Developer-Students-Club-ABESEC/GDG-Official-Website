@@ -60,17 +60,22 @@ const WhyJoinGDG = () => {
   return (
     <section className="w-full py-20 bg-[#0a0a0a] text-white">
       <div className="max-w-7xl mx-auto px-5">
-        <h2 className="text-6xl md:text-7xl font-bold text-[#e5e5e5] mb-3 text-center" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
-          Why Join{" "}
-          <span className="text-[#4285F4]">
-            GDG?
-          </span>
+        <h2
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#e5e5e5] mb-3 text-center"
+          style={{ fontFamily: "'Space Grotesk', sans-serif" }}
+        >
+          Why <span className="text-[#4285F4]">Join GDG?</span>
         </h2>
-        <p className="text-center text-[#737373] text-lg mb-14" style={{ fontFamily: "'Inter', sans-serif" }}>
-          Explore what makes our community a powerful space for learning and growth.
+
+        <p
+          className="text-center text-[#737373] text-base sm:text-lg mb-14"
+          style={{ fontFamily: "'Inter', sans-serif" }}
+        >
+          Explore what makes our community a powerful space for learning and
+          growth.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 items-stretch">
           {cardData.map((card, index) => (
             <Tilt
               key={index}
@@ -81,12 +86,13 @@ const WhyJoinGDG = () => {
               transitionSpeed={2500}
             >
               <div
-                className="group relative p-7 h-[350px] rounded-2xl bg-[#151515] border transition-all duration-700 hover:scale-[1.05] hover:-translate-y-2 overflow-hidden"
+                className="group relative p-7 h-full min-h-[350px] flex flex-col rounded-2xl bg-[#151515] border transition-all duration-700 hover:scale-[1.05] hover:-translate-y-2 overflow-hidden"
                 style={{
                   borderColor: card.themeHex,
                   boxShadow: `0 4px 24px ${card.themeHex}20`,
                 }}
               >
+                {/* Hover Glow Layer */}
                 <div
                   className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-700 rounded-2xl pointer-events-none"
                   style={{
@@ -100,7 +106,8 @@ const WhyJoinGDG = () => {
                   }}
                 ></div>
 
-                <div className="relative z-10">
+                <div className="relative z-10 flex flex-col flex-grow">
+                  {/* Icon */}
                   <div
                     className="p-4 rounded-xl inline-block mb-5 transition-all duration-500 group-hover:scale-110 group-hover:rotate-3"
                     style={{
@@ -113,15 +120,24 @@ const WhyJoinGDG = () => {
                     {card.icon}
                   </div>
 
-                  <h3 className="text-2xl font-bold mb-3 text-[#e5e5e5]" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
+                  {/* Title */}
+                  <h3
+                    className="text-2xl sm:text-2xl font-bold mb-3 text-[#e5e5e5]"
+                    style={{ fontFamily: "'Space Grotesk', sans-serif" }}
+                  >
                     {card.title}
                   </h3>
 
-                  <p className="text-[#a3a3a3] text-sm leading-relaxed mb-5" style={{ fontFamily: "'Inter', sans-serif" }}>
+                  {/* Description */}
+                  <p
+                    className="text-[#a3a3a3] text-sm leading-relaxed mb-5"
+                    style={{ fontFamily: "'Inter', sans-serif" }}
+                  >
                     {card.desc}
                   </p>
 
-                  <div className="flex flex-wrap gap-2">
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-2 mt-auto">
                     {card.tags.map((tag, i) => (
                       <span
                         key={i}
@@ -139,6 +155,7 @@ const WhyJoinGDG = () => {
                   </div>
                 </div>
 
+                {/* Outer Hover Border */}
                 <div
                   className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-700 rounded-2xl pointer-events-none"
                   style={{
