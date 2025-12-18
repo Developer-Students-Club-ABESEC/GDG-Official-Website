@@ -227,15 +227,14 @@ export default function Navbar() {
       href: "/events",
     },
     {
-      title: "Achievements", 
-      
-      icon: <IconAward className="w-full h-full text-purple-400" />,
-      href: "/achievements",
-    },
-    {
       title: "Team",
       icon: <IconUsers className="w-full h-full text-orange-400" />,
       href: "/team",
+    },
+    {
+      title: "Achievements", 
+      icon: <IconAward className="w-full h-full text-purple-400" />,
+      href: "/achievements",
     },
     {
       title: "Help",
