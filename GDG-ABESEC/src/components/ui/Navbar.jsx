@@ -235,7 +235,7 @@ export default function Navbar() {
       href: "/team",
     },
     {
-      title: "Achievements", 
+      title: "Showcase", 
       icon: <IconAward className="w-full h-full text-purple-400" />,
       href: "/achievements",
     },
