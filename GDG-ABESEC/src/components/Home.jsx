@@ -129,6 +129,17 @@ const Home = () => {
         />
       </div>
 
+      {/* Desktop-only dissolve inside Home */}
+<div
+  className="absolute bottom-0 left-0 right-0 h-20 md:h-32 lg:h-40 xl:h-48 z-[5] pointer-events-none"
+  style={{
+    background: `
+      linear-gradient(to bottom, #030306 0%, #0a0a0a 100%),
+      linear-gradient(to right, #0e0b1a 0%, #000000 40%, #000000 60%, #0e0b1a 100%)
+    `,
+    backgroundBlendMode: "normal",
+  }}
+/>
       {/* Branding */}
       <div className="fixed top-4 left-4 md:top-8 md:left-8 z-20 flex flex-col gap-2 pointer-events-none">
         <div className="flex items-center gap-2 pointer-events-auto">
