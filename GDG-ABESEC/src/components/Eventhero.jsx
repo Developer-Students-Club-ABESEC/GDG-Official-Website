@@ -182,8 +182,8 @@ const EventHero = ({ showPast, setShowPast }) => {
             <button
               onClick={() => setShowPast(false)}
               className={`relative px-10 py-4 text-base font-bold tracking-wider transition-all duration-300 ${!showPast
-                  ? 'text-black'
-                  : 'text-white hover:text-gray-300'
+                ? 'text-black'
+                : 'text-white hover:text-gray-300'
                 }`}
             >
               {!showPast && (
@@ -199,8 +199,8 @@ const EventHero = ({ showPast, setShowPast }) => {
             <button
               onClick={() => setShowPast(true)}
               className={`relative px-10 py-4 text-base font-bold tracking-wider transition-all duration-300 ${showPast
-                  ? 'text-black'
-                  : 'text-white hover:text-gray-300'
+                ? 'text-black'
+                : 'text-white hover:text-gray-300'
                 }`}
             >
               {showPast && (
