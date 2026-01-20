@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import Navbar from "./ui/Navbar";
 
 const EventHero = ({ showPast, setShowPast }) => {
-  /* ===== BRANDING SCROLL STATE (ONLY ADDITION) ===== */
   const [showBrandText, setShowBrandText] = useState(true);
 
   useEffect(() => {

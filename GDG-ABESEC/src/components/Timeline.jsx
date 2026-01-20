@@ -10,49 +10,50 @@ const EventsTimeline = () => {
   const events = [
     {
       id: 1,
-      name: "Tech Summit 2024",
-      date: "December 15, 2024",
+      name: "MTG 2.0",
+      date: "November 29, 2025",
       description: "Annual technology conference featuring keynote speakers from leading tech companies and interactive workshops on AI, blockchain, and cloud computing.",
-      coverImage: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=500&fit=crop",
+      coverImage: "../public/mtg2.0.jpg",
       gallery: [
-        "https://images.unsplash.com/photo-1511578314322-379afb476865?w=400&h=300&fit=crop",
-        "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400&h=300&fit=crop",
-        "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=400&h=300&fit=crop",
-        "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=400&h=300&fit=crop"
-      ]
+        "../public/mtg1.jpg",
+        "../public/mtg2.jpg",
+        "../public/mtg3.jpg",
+        "../public/mtg4.jpg"
+
+        ]
     },
     {
       id: 2,
-      name: "Hackathon Night",
-      date: "November 20, 2024",
+      name: "Hackheaven 2.0",
+      date: "May 3, 2025",
       description: "24-hour coding marathon where developers collaborated to build innovative solutions for real-world problems. Amazing projects were showcased.",
-      coverImage: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=500&fit=crop",
+      coverImage: "../public/hackheaven4.jpg",
       gallery: [
-        "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop",
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop",
-        "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=300&fit=crop",
-        "https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop"
-      ]
+        "../public/hackheaven1.jpg",
+        "../public/hackheaven2.jpg",
+        "../public/hackheaven3.jpg",
+        "../public/hackheaven5.jpeg" 
+        ]
     },
     {
       id: 3,
-      name: "Community Meetup",
-      date: "October 8, 2024",
+      name: "Tech Winter Break",
+      date: "December 26, 2024",
       description: "Monthly gathering for networking, knowledge sharing, and building connections. Featured lightning talks and open discussions on latest trends.",
-      coverImage: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=500&fit=crop",
+      coverImage: "../public/techwinter4.jpeg",
       gallery: [
-        "https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=400&h=300&fit=crop",
-        "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=400&h=300&fit=crop",
-        "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=400&h=300&fit=crop",
-        "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=400&h=300&fit=crop"
-      ]
+        "../public/techwinter1.jpg",
+        "../public/techwinter2.jpg",
+        "../public/techwinter3.jpg",
+        "../public/techwinter5.jpg"
+        ]
     },
     {
       id: 4,
-      name: "Workshop Series",
-      date: "September 12, 2024",
-      description: "Hands-on workshops covering modern web development, design thinking, and project management methodologies for all skill levels.",
-      coverImage: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&h=500&fit=crop",
+      name: "Branch & Beyond",
+      date: "July 3, 2024",
+      description: "Hands-on workshops covering modern web development, design thinking, and git methodologies for all skill levels.",
+      coverImage: "../public/event3.png",
       gallery: [
         "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=300&fit=crop",
         "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=300&fit=crop",
@@ -60,32 +61,32 @@ const EventsTimeline = () => {
         "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&h=300&fit=crop"
       ]
     },
-    {
-      id: 5,
-      name: "Workshop Series",
-      date: "September 12, 2024",
-      description: "Hands-on workshops covering modern web development, design thinking, and project management methodologies for all skill levels.",
-      coverImage: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&h=500&fit=crop",
-      gallery: [
-        "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=300&fit=crop",
-        "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=300&fit=crop",
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop",
-        "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&h=300&fit=crop"
-      ]
-    },
-    {
-      id: 6,
-      name: "Workshop Series",
-      date: "September 12, 2024",
-      description: "Hands-on workshops covering modern web development, design thinking, and project management methodologies for all skill levels.",
-      coverImage: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&h=500&fit=crop",
-      gallery: [
-        "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=300&fit=crop",
-        "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=300&fit=crop",
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop",
-        "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&h=300&fit=crop"
-      ]
-    }
+    // {
+    //   id: 5,
+    //   name: "Workshop Series",
+    //   date: "September 12, 2024",
+    //   description: "Hands-on workshops covering modern web development, design thinking, and project management methodologies for all skill levels.",
+    //   coverImage: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&h=500&fit=crop",
+    //   gallery: [
+    //     "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=300&fit=crop",
+    //     "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=300&fit=crop",
+    //     "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop",
+    //     "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&h=300&fit=crop"
+    //   ]
+    // },
+    // {
+    //   id: 6,
+    //   name: "Workshop Series",
+    //   date: "September 12, 2024",
+    //   description: "Hands-on workshops covering modern web development, design thinking, and project management methodologies for all skill levels.",
+    //   coverImage: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&h=500&fit=crop",
+    //   gallery: [
+    //     "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=300&fit=crop",
+    //     "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=300&fit=crop",
+    //     "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop",
+    //     "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&h=300&fit=crop"
+    //   ]
+    // }
   ];
 
   useEffect(() => {
