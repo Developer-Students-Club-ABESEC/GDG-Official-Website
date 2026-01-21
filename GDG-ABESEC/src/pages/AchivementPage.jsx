@@ -151,6 +151,16 @@ const mockAchievements = [
 
 const Showcase = () => {
   const [activeTab, setActiveTab] = useState("projects");
+  const [hideBrandText, setHideBrandText] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setHideBrandText(window.scrollY >= window.innerHeight);
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
@@ -164,7 +174,12 @@ const Showcase = () => {
             alt="gdgLogo"
           />
 
-          <div className="flex items-center gap-0.5 font-bold text-xl sm:text-2xl md:text-3xl">
+          {/* Google Text */}
+          <div
+            className={`flex items-center gap-0.5 font-bold text-xl sm:text-2xl md:text-3xl
+      transition-all duration-500 ease-out
+      ${hideBrandText ? "opacity-0 -translate-x-4" : "opacity-100 translate-x-0"}`}
+          >
             <span className="text-blue-500">G</span>
             <span className="text-red-500">o</span>
             <span className="text-yellow-300">o</span>
@@ -174,7 +189,12 @@ const Showcase = () => {
           </div>
         </div>
 
-        <div className="text-white text-sm sm:text-base md:text-lg tracking-wide ml-0.5">
+        {/* Developers Group */}
+        <div
+          className={`text-white text-sm sm:text-base md:text-lg tracking-wide ml-0.5
+    transition-all duration-500 ease-out
+    ${hideBrandText ? "opacity-0 -translate-y-2" : "opacity-100 translate-y-0"}`}
+        >
           Developers Group
         </div>
       </div>
@@ -725,7 +745,7 @@ const AchievementCard = ({ achievement, index }) => {
                     year: "numeric",
                     month: "long",
                     day: "numeric",
-                  }
+                  },
                 )}
               </span>
             </div>
