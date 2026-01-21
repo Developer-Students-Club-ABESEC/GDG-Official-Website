@@ -763,33 +763,42 @@ const Team = () => {
       `}</style>
 
       <div className="tm-wrapper">
-        <div className="tm-logo-container">
-          <img
-            src="https://www.svgrepo.com/show/353810/google-developers.svg"
-            alt="gdgLogo"
-          />
-        </div>
+        <div className="fixed top-4 left-4 md:top-8 md:left-8 z-20 flex flex-col gap-2 pointer-events-none">
+          <div className="flex items-center gap-2 pointer-events-auto">
+            <img
+              src="https://www.svgrepo.com/show/353810/google-developers.svg"
+              className="h-8 w-10 sm:h-12 sm:w-14 md:h-14 md:w-16"
+              alt="gdgLogo"
+            />
 
-        <div
-          className={`tm-logo-text-container transition-all duration-500 ease-out
-  ${hideBrandText ? "opacity-0 -translate-x-4" : "opacity-100 translate-x-0"}`}
-        >
-          <span style={{ color: "#3b82f6" }}>G</span>
-          <span style={{ color: "#ef4444" }}>o</span>
-          <span style={{ color: "#fbbf24" }}>o</span>
-          <span style={{ color: "#10b981" }}>g</span>
-          <span style={{ color: "#3b82f6" }}>l</span>
-          <span style={{ color: "#ef4444" }}>e</span>
-        </div>
+            {/* Google Text */}
+            <div
+              className={`flex items-center gap-0.5 font-bold text-xl sm:text-2xl md:text-3xl
+      transition-all duration-500 ease-out
+      ${hideBrandText ? "opacity-0 -translate-x-4" : "opacity-100 translate-x-0"}`}
+            >
+              <span className="text-blue-500">G</span>
+              <span className="text-red-500">o</span>
+              <span className="text-yellow-300">o</span>
+              <span className="text-green-500">g</span>
+              <span className="text-blue-500">l</span>
+              <span className="text-red-500">e</span>
+            </div>
+          </div>
 
-        <div
-          className={`tm-logo-text-subtitle transition-all duration-500 ease-out
-  ${hideBrandText ? "opacity-0 -translate-y-2" : "opacity-100 translate-y-0"}`}
-        >
-          Developers Group
+          {/* Developers Group */}
+          <div
+            className={`text-white text-sm sm:text-base md:text-lg tracking-wide ml-0.5
+    transition-all duration-500 ease-out
+    ${hideBrandText ? "opacity-0 -translate-y-2" : "opacity-100 translate-y-0"}`}
+          >
+            Developers Group
+          </div>
         </div>
-
         <Navbar />
+
+
+
 
         <section className="tm-hero">
           {/* Grid Background */}
@@ -810,12 +819,26 @@ const Team = () => {
             >
               <span className="tm-hero-badge">THE BRILLIANT MINDS</span>
             </motion.div>
-            
+
             <motion.h1
               initial={{ y: -50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              style={{ display: "inline-block" }}
+              className="
+              relative 
+              inline-block 
+              px-4
+              text-6xl md:text-8xl lg:text-9xl 
+              font-black 
+              mb-8 
+              tracking-tighter
+            "
+              style={{
+                background: "linear-gradient(135deg, #fff 0%, #888 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+              }}
             >
               MEET OUR TEAM
 

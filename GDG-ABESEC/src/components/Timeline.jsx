@@ -213,7 +213,7 @@ const EventsTimelineWithUpcoming = () => {
 
   return (
     <>
-      <div className="sticky top-0 z-50 bg-black/80 backdrop-blur-xl border-b border-white/10">
+      <div className="sticky top-0  bg-black/80 backdrop-blur-xl border-b border-white/10">
         <div className="container mx-auto px-4 py-6">
           <div className="flex justify-center gap-2">
             <button
