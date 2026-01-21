@@ -169,7 +169,7 @@ const EventHero = ({ showPast, setShowPast }) => {
         </div>
       </motion.section>
 
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -213,7 +213,7 @@ const EventHero = ({ showPast, setShowPast }) => {
             </button>
           </div>
         </div>
-      </motion.div>
+      </motion.div> */}
     </>
   );
 };
