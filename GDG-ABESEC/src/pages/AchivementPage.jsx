@@ -262,7 +262,15 @@ const Showcase = () => {
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-6xl md:text-8xl lg:text-9xl font-black mb-8 tracking-tighter relative inline-block"
+            className="
+              relative 
+              inline-block 
+              px-4
+              text-6xl md:text-8xl lg:text-9xl 
+              font-black 
+              mb-8 
+              tracking-tighter
+            "
             style={{
               background: "linear-gradient(135deg, #fff 0%, #888 100%)",
               WebkitBackgroundClip: "text",
@@ -271,11 +279,14 @@ const Showcase = () => {
             }}
           >
             SHOWCASE
+
+            {/* underline */}
             <motion.div
               initial={{ width: 0 }}
-              animate={{ width: "100%" }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-              className="absolute bottom-0 left-0 h-1 bg-white"
+              animate={{ width: "calc(100% - 2rem)" }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+              className="absolute bottom-0 left-1/2 h-1 bg-white"
+              style={{ transform: "translateX(-50%)" }}
             />
           </motion.h1>
 
@@ -321,11 +332,10 @@ const Showcase = () => {
           <div className="flex justify-center gap-2">
             <button
               onClick={() => setActiveTab("projects")}
-              className={`relative px-10 py-4 text-base font-bold tracking-wider transition-all duration-300 ${
-                activeTab === "projects"
+              className={`relative px-10 py-4 text-base font-bold tracking-wider transition-all duration-300 ${activeTab === "projects"
                   ? "text-black"
                   : "text-white hover:text-gray-300"
-              }`}
+                }`}
             >
               {activeTab === "projects" && (
                 <motion.div
@@ -338,11 +348,10 @@ const Showcase = () => {
             </button>
             <button
               onClick={() => setActiveTab("achievements")}
-              className={`relative px-10 py-4 text-base font-bold tracking-wider transition-all duration-300 ${
-                activeTab === "achievements"
+              className={`relative px-10 py-4 text-base font-bold tracking-wider transition-all duration-300 ${activeTab === "achievements"
                   ? "text-black"
                   : "text-white hover:text-gray-300"
-              }`}
+                }`}
             >
               {activeTab === "achievements" && (
                 <motion.div
@@ -422,9 +431,8 @@ const ProjectCard = ({ project, index }) => {
           </div>
 
           <div
-            className={`flex flex-col justify-between order-1 ${
-              index % 2 === 0 ? "lg:order-2" : "lg:order-1"
-            }`}
+            className={`flex flex-col justify-between order-1 ${index % 2 === 0 ? "lg:order-2" : "lg:order-1"
+              }`}
           >
             <motion.div
               initial={{ opacity: 0 }}
@@ -518,9 +526,8 @@ const ProjectCard = ({ project, index }) => {
           </div>
 
           <motion.div
-            className={`relative h-[450px] order-2 ${
-              index % 2 === 0 ? "lg:order-1" : "lg:order-2"
-            }`}
+            className={`relative h-[450px] order-2 ${index % 2 === 0 ? "lg:order-1" : "lg:order-2"
+              }`}
           >
             <motion.a
               href={project.deployed_url}

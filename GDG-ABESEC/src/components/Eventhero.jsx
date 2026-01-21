@@ -111,7 +111,6 @@ const EventHero = ({ showPast, setShowPast }) => {
           Developers Group
         </motion.div>
       </div>
-      {/* ============================================ */}
 
       <motion.section
         initial={{ opacity: 0 }}
@@ -139,7 +138,6 @@ const EventHero = ({ showPast, setShowPast }) => {
               DISCOVER OUR EVENTS
             </span>
           </motion.div>
-
           <motion.h1
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -179,12 +177,12 @@ const EventHero = ({ showPast, setShowPast }) => {
           >
             Scroll down to explore
           </motion.div>
-
           <Navbar />
+
         </div>
       </motion.section>
 
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -195,6 +193,10 @@ const EventHero = ({ showPast, setShowPast }) => {
           <div className="flex justify-center gap-2">
             <button
               onClick={() => setShowPast(false)}
+              className={`relative px-10 py-4 text-base font-bold tracking-wider transition-all duration-300 ${!showPast
+                ? 'text-black'
+                : 'text-white hover:text-gray-300'
+                }`}
               className={`relative px-10 py-4 font-bold tracking-wider ${
                 !showPast ? "text-black" : "text-white hover:text-gray-300"
               }`}
@@ -211,6 +213,10 @@ const EventHero = ({ showPast, setShowPast }) => {
 
             <button
               onClick={() => setShowPast(true)}
+              className={`relative px-10 py-4 text-base font-bold tracking-wider transition-all duration-300 ${showPast
+                ? 'text-black'
+                : 'text-white hover:text-gray-300'
+                }`}
               className={`relative px-10 py-4 font-bold tracking-wider ${
                 showPast ? "text-black" : "text-white hover:text-gray-300"
               }`}
@@ -226,7 +232,7 @@ const EventHero = ({ showPast, setShowPast }) => {
             </button>
           </div>
         </div>
-      </motion.div>
+      </motion.div> */}
     </>
   );
 };

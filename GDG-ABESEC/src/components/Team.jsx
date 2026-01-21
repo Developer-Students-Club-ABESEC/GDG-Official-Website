@@ -810,18 +810,24 @@ const Team = () => {
             >
               <span className="tm-hero-badge">THE BRILLIANT MINDS</span>
             </motion.div>
-
-            <motion.div
+            
+            <motion.h1
               initial={{ y: -50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               style={{ display: "inline-block" }}
             >
-              <h1 className="tm-hero-title">
-                MEET OUR TEAM
-                <div className="tm-hero-underline"></div>
-              </h1>
-            </motion.div>
+              MEET OUR TEAM
+
+              {/* underline */}
+              <motion.div
+                initial={{ width: 0 }}
+                animate={{ width: "calc(100% - 2rem)" }}
+                transition={{ duration: 0.5, delay: 0.8 }}
+                className="absolute bottom-0 left-1/2 h-1 bg-white"
+                style={{ transform: "translateX(-50%)" }}
+              />
+            </motion.h1>
 
             <motion.p
               initial={{ y: 30, opacity: 0 }}
