@@ -152,9 +152,10 @@ const EventHero = ({ showPast, setShowPast }) => {
           OUR EVENTS
             <motion.div
               initial={{ width: 0 }}
-              animate={{ width: "100%" }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-              className="absolute left-0 h-1 bg-white"
+              animate={{ width: "calc(100% - 2rem)" }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+              className="absolute bottom-0 left-1/2 h-1 bg-white"
+              style={{ transform: "translateX(-50%)" }}
              
             />
           </motion.h1>
