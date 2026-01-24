@@ -10,7 +10,7 @@ const EventsTimelineWithUpcoming = () => {
   const cardRefs = useRef([]);
   const timelineRef = useRef(null);
 
-    const pastEvents = [
+  const pastEvents = [
     {
       id: 1,
       name: "MTG 2.0",
@@ -22,8 +22,7 @@ const EventsTimelineWithUpcoming = () => {
         "../public/mtg2.jpg",
         "../public/mtg3.jpg",
         "../public/mtg4.jpg"
-
-        ]
+      ]
     },
     {
       id: 2,
@@ -36,7 +35,7 @@ const EventsTimelineWithUpcoming = () => {
         "../public/hackheaven2.jpg",
         "../public/hackheaven3.jpg",
         "../public/hackheaven5.jpeg" 
-        ]
+      ]
     },
     {
       id: 3,
@@ -49,7 +48,7 @@ const EventsTimelineWithUpcoming = () => {
         "../public/techwinter2.jpg",
         "../public/techwinter3.jpg",
         "../public/techwinter5.jpg"
-        ]
+      ]
     },
     {
       id: 4,
@@ -64,8 +63,7 @@ const EventsTimelineWithUpcoming = () => {
         "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&h=300&fit=crop"
       ]
     },
-  ]
-
+  ];
 
   useEffect(() => {
     if (!showPast) return;
@@ -90,7 +88,7 @@ const EventsTimelineWithUpcoming = () => {
     }, 100);
 
     return () => observer.disconnect();
-  }, [showPast, pastEvents]);
+  }, [showPast]);
 
   useEffect(() => {
     let rafId;
@@ -213,7 +211,7 @@ const EventsTimelineWithUpcoming = () => {
 
   return (
     <>
-      <div className="sticky top-0  bg-black/80 backdrop-blur-xl border-b border-white/10">
+      <div className="sticky top-0 z-50 bg-black/80 backdrop-blur-xl border-b border-white/10">
         <div className="container mx-auto px-4 py-6">
           <div className="flex justify-center gap-2">
             <button
@@ -362,7 +360,10 @@ const EventsTimelineWithUpcoming = () => {
                     key={event.id}
                     ref={(el) => (cardRefs.current[index] = el)}
                     data-index={index}
-                    className={`relative mb-32 transition-all duration-1000 ${event.id % 2 === 1 ? 'pr-[52%]' : 'pl-[52%]'
+                    className={`relative mb-12 md:mb-32 transition-all duration-1000 ${
+                      event.id % 2 === 1 
+                        ? 'pr-[52%] md:pr-[52%]' 
+                        : 'pl-[52%] md:pl-[52%]'
                       } ${visibleCards.has(index)
                         ? 'opacity-100 translate-y-0'
                         : 'opacity-0 translate-y-20'
@@ -373,16 +374,19 @@ const EventsTimelineWithUpcoming = () => {
                   >
                     <div
                       className="relative group"
-                      onMouseEnter={() => setHoveredEvent(event.id)}
-                      onMouseLeave={() => setHoveredEvent(null)}
-                      onPointerDown={() => {
-                        if (window.innerWidth < 768) {
+                      onMouseEnter={() => {
+                        if (window.innerWidth >= 768) {
                           setHoveredEvent(event.id);
                         }
                       }}
+                      onMouseLeave={() => {
+                        if (window.innerWidth >= 768) {
+                          setHoveredEvent(null);
+                        }
+                      }}
                     >
-                      <div className="bg-zinc-900 rounded-2xl overflow-hidden shadow-2xl transform transition-all duration-500 hover:scale-105 border border-zinc-800 hover:border-blue-500/50 relative z-20 max-w-full">
-                        <div className="relative h-48 overflow-hidden">
+                      <div className="bg-zinc-900 rounded-xl md:rounded-2xl overflow-hidden shadow-2xl transform transition-all duration-500 md:hover:scale-105 border border-zinc-800 md:hover:border-blue-500/50 relative z-20 max-w-full">
+                        <div className="relative h-32 md:h-48 overflow-hidden">
                           <img
                             src={event.coverImage}
                             alt={event.name}
@@ -391,17 +395,18 @@ const EventsTimelineWithUpcoming = () => {
                           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
                         </div>
 
-                        <div className="p-6">
-                          <h3 className="text-xl md:text-2xl font-bold text-white mb-2 break-words leading-snug group-hover:text-blue-400 transition-colors duration-300">
+                        <div className="p-3 md:p-6">
+                          <h3 className="text-base md:text-2xl font-bold text-white mb-1 md:mb-2 break-words leading-tight md:leading-snug md:group-hover:text-blue-400 transition-colors duration-300">
                             {event.name}
                           </h3>
-                          <div className="flex items-center text-gray-400 mb-3">
-                            <Calendar className="w-4 h-4 mr-2" />
-                            <span className="text-sm">{event.date}</span>
+                          <div className="flex items-center text-gray-400 mb-2 md:mb-3">
+                            <Calendar className="w-3 h-3 md:w-4 md:h-4 mr-1.5 md:mr-2" />
+                            <span className="text-xs md:text-sm">{event.date}</span>
                           </div>
 
+                          {/* Desktop: Show on hover */}
                           <div
-                            className={`overflow-hidden transition-all duration-500 ${hoveredEvent === event.id
+                            className={`hidden md:block overflow-hidden transition-all duration-500 ${hoveredEvent === event.id
                                 ? 'max-h-32 opacity-100'
                                 : 'max-h-0 opacity-0'
                               }`}
@@ -411,8 +416,9 @@ const EventsTimelineWithUpcoming = () => {
                             </p>
                           </div>
 
+                          {/* Desktop: Button shows on hover */}
                           <div
-                            className={`transition-all duration-500 opacity-100 translate-y-0 pointer-events-auto md:${hoveredEvent === event.id
+                            className={`hidden md:block transition-all duration-500 ${hoveredEvent === event.id
                                 ? 'opacity-100 translate-y-0'
                                 : 'opacity-0 translate-y-4 pointer-events-none'
                               }`}
@@ -421,6 +427,15 @@ const EventsTimelineWithUpcoming = () => {
                               onClick={() => setSelectedEvent(event)}
                               className="group relative px-6 py-2 bg-transparent border-2 border-blue-500 text-white font-semibold rounded-lg overflow-hidden cursor-pointer transition-all duration-500 ease-in-out hover:text-white">
                               <span className="absolute inset-0 bg-blue-500 -z-10 translate-x-full group-hover:translate-x-0 transition-all duration-500 ease-in-out"></span>
+                              View More →
+                            </button>
+                          </div>
+
+                          {/* Mobile: Button always visible */}
+                          <div className="md:hidden mt-2">
+                            <button 
+                              onClick={() => setSelectedEvent(event)}
+                              className="w-full px-4 py-2 text-sm bg-blue-500 text-white font-semibold rounded-lg transition-all duration-300 active:scale-95">
                               View More →
                             </button>
                           </div>

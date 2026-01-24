@@ -161,10 +161,10 @@ const Showcase = () => {
       <div className="fixed top-4 left-4 md:top-8 md:left-8 z-20 flex flex-col gap-2 pointer-events-none">
         <div className="flex items-center gap-2 pointer-events-auto">
            <img
-                                  src={logo}
-                                  className="h-8 w-10 sm:h-12 sm:w-14 md:h-14 md:w-20"
-                                  alt="gdgLogo"
-                                />
+                                              src={logo}
+                                              className="h-8 w-10 sm:h-12 sm:w-14 md:h-14 md:w-20"
+                                              alt="gdgLogo"
+                                            />
 
           {/* Google Text */}
           <div
@@ -620,7 +620,7 @@ const ProjectCard = ({ project, index }) => {
               <img
                 src={project.owner_image}
                 alt={project.owner_name}
-                className="w-full h-full object-contain"
+                className="w-full h-[500px] object-cover object-center"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-6">
                 <p className="text-xs font-semibold tracking-wider text-gray-400 mb-1">
