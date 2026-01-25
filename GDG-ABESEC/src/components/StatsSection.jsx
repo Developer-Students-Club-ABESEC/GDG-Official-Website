@@ -109,7 +109,7 @@ const FloatingAppIcon = ({
         left: "50%",
         top: "50%",
         transform: "translate(-50%, -50%)",
-        backgroundColor: "#151515",
+        backgroundColor: "#0a0a0a",
         borderColor: position.borderColor
       }}
       initial={{ x: 0, y: 0, scale: 0, opacity: 0 }}

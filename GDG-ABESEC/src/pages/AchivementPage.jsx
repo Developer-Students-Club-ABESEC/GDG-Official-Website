@@ -14,6 +14,7 @@ import Navbar from "../components/ui/Navbar";
 import ScrollProgressBar from "../components/ScrollProgressBar";
 import CursorTrail from "../components/ui/CursorTrail";
 import Footer from "../components/Footer";
+import logo from "/logo.png";
 
 const mockProjects = [
   {
@@ -63,6 +64,19 @@ const mockProjects = [
     linkedin_url: "https://www.linkedin.com/in/anandanmol1010/",
     deployed_url: "https://campus--shield.vercel.app/",
     tech_stack: ["React JS", "Typescript", "Tailwind CSS", "Firebase"],
+  },
+  {
+    id: 4,
+    title: "Muvies",
+    description:
+      "Muvies is a full-stack multimedia platform designed to provide users with seamless access to movies and music in one place. The application allows users to explore movies, watch trailers, and create personalized watchlists. Alongside movies, users can stream and download music, making it a complete entertainment solution.",
+    thumbnail_url: "/projects-imgs/tanishq-project.png",
+    owner_image: "/projects-imgs/tanishq.jpeg",
+    owner_name: "Tanishq Saxena",
+    github_url: "https://github.com/Tanishq-7777/miniProjectMoviesSpace",
+    linkedin_url: "https://www.linkedin.com/in/tanishq-saxena-20bb75344/",
+    deployed_url: "https://mini-project-movies-space.vercel.app/",
+    tech_stack: ["React JS", "Node JS", "Tailwind CSS", "Express JS"],
   },
 ];
 const mockAchievements = [
@@ -159,11 +173,11 @@ const Showcase = () => {
       {/* ================= BRANDING ================= */}
       <div className="fixed top-4 left-4 md:top-8 md:left-8 z-20 flex flex-col gap-2 pointer-events-none">
         <div className="flex items-center gap-2 pointer-events-auto">
-          <img
-            src="https://www.svgrepo.com/show/353810/google-developers.svg"
-            className="h-8 w-10 sm:h-12 sm:w-14 md:h-14 md:w-16"
-            alt="gdgLogo"
-          />
+           <img
+                                              src={logo}
+                                              className="h-8 w-10 sm:h-12 sm:w-14 md:h-14 md:w-20"
+                                              alt="gdgLogo"
+                                            />
 
           {/* Google Text */}
           <div
@@ -619,7 +633,7 @@ const ProjectCard = ({ project, index }) => {
               <img
                 src={project.owner_image}
                 alt={project.owner_name}
-                className="w-full h-full object-contain"
+                className="w-full h-[500px] object-cover object-center"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-6">
                 <p className="text-xs font-semibold tracking-wider text-gray-400 mb-1">
