@@ -58,6 +58,22 @@ const DEFAULT_IMAGES = [
     src: "hackheaven4.jpg",
     alt: "Social media image",
   },
+  {
+    src: "techwinter5.jpg",
+  },
+  {
+    src: "mtg4.JPG",
+  },
+  {
+    src: "hackheaven2.jpg",
+  },
+  {
+    src: "hackheaven1.jpg",
+  },
+  {
+    src:"techwinter4.jpeg",
+  },
+
 ];
 
 const DEFAULTS = {
