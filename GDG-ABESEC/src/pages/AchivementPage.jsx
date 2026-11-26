@@ -374,14 +374,6 @@ const Showcase = () => {
             scroll-behavior: smooth;
           }
 
-          @media (max-width: 1023px) and (max-height: 700px) {
-            .showcase-hero {
-              align-items: flex-start;
-              padding-top: 8.75rem;
-              padding-bottom: 3rem;
-            }
-          }
-
           ::-webkit-scrollbar {
             width: 6px;
           }
@@ -409,7 +401,7 @@ const Showcase = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="showcase-hero relative min-h-[100svh] flex items-center justify-center overflow-hidden px-4 pt-32 pb-14 sm:px-6 sm:pt-36 sm:pb-16 md:pt-40 lg:pt-44"
+        className="showcase-hero relative min-h-screen flex items-center justify-center px-4 overflow-hidden bg-black"
       >
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-1/4 left-0 w-full h-px bg-white"></div>
@@ -420,14 +412,14 @@ const Showcase = () => {
           <div className="absolute top-0 left-3/4 h-full w-px bg-white"></div>
         </div>
 
-        <div className="relative z-10 w-full max-w-6xl mx-auto text-center">
+        <div className="relative z-10 max-w-6xl mx-auto text-center">
           <motion.div
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="mb-4 sm:mb-6"
+            className="mb-6"
           >
-            <span className="inline-block px-3 py-1.5 sm:px-4 sm:py-2 bg-white text-black text-xs sm:text-sm font-semibold tracking-wider">
+            <span className="inline-block px-4 py-2 bg-white text-black text-sm font-semibold tracking-wider">
               EXCELLENCE IN INNOVATION
             </span>
           </motion.div>
@@ -436,16 +428,7 @@ const Showcase = () => {
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="
-              relative 
-              inline-block 
-              px-2 sm:px-4
-              text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl
-              font-black 
-              mb-6 sm:mb-8 
-              tracking-tighter
-              leading-none
-            "
+            className="text-6xl md:text-8xl lg:text-9xl font-black mb-8 tracking-tighter relative inline-block pb-4"
             style={{
               background: "linear-gradient(135deg, #fff 0%, #888 100%)",
               WebkitBackgroundClip: "text",
@@ -476,12 +459,7 @@ const Showcase = () => {
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="max-w-3xl mx-auto mb-8 px-2 text-sm leading-relaxed text-gray-500 sm:mb-12 sm:px-6 sm:text-base md:text-lg lg:text-xl"
-            style={{
-              letterSpacing: "0.15em",
-              textTransform: "uppercase",
-              fontWeight: 300,
-            }}
+            className="text-base md:text-xl text-gray-500 max-w-3xl mx-auto mb-12 uppercase tracking-[0.15em] font-light"
           >
             A curated collection of impactful work and milestones{" "}
           </motion.p>
@@ -490,14 +468,9 @@ const Showcase = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex items-center justify-center gap-2 text-center text-[10px] text-gray-500 sm:text-xs"
-            style={{
-              letterSpacing: "0.2em",
-              textTransform: "uppercase",
-              fontWeight: 500,
-            }}
+            className="text-gray-500 text-xs uppercase tracking-[0.2em]"
           >
-            <span>Scroll down to explore</span>
+            Scroll down to explore
           </motion.div>
         </div>
       </motion.section>
